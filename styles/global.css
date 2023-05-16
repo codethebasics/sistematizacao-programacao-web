@@ -119,8 +119,8 @@ body {
     justify-content: flex-end;
 }
 
-#hero #manchete {    
-    align-items: flex-start;
+#hero #manchete {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #hero #manchete h1 {
