@@ -95,13 +95,13 @@ body {
 #team,
 #inscription {
     height: 100%;
-    height: 100vh;
     padding: 1.5rem 10rem;
 }
 
 #hero {
     grid-area: hero;
     display: flex;
+    height: 100vh;
 }
 
 #hero > div {
@@ -121,24 +121,48 @@ body {
 
 #hero #manchete {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: flex-start;
+}
+
+#hero #manchete > div {
+    text-align: right;
+    margin-bottom: 1rem;
 }
 
 #hero #manchete h1 {
-    font-size: 5rem;
+    font-size: 6rem;
+    
 }
 
 #hero #manchete h3 {
     font-size: 3rem;
+    color: #027db6;
 }
 
-#hero #manchete p {
-    font-size: 2rem;
+#hero #manchete .myspan {
+    font-size: 1.5rem;
+    color: rgb(78, 78, 78);
+    font-weight: bold;
 }
 
 #description {
     background-color: #222;
     color: #fff;
     grid-area: description;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#description > div {
+    width: 100%;
+}
+
+#description img {
+    border-radius: 1rem;
+    border: 1rem solid #000;
+    box-shadow: 0 3px 5px #000;
 }
 
 #team {
@@ -149,4 +173,50 @@ body {
     background-color: #222;
     color: #fff;
     grid-area: inscription;
+}
+
+.course-content {
+    padding: 2.5rem;
+}
+
+.course-content p {
+    font-size: 2.5rem;
+}
+
+.course-content ul {
+    list-style-type: none;
+}
+
+.course-content ul li {
+    margin: 1.5rem 0;
+}
+
+.cta-container {
+    margin-top: 2rem;
+}
+
+.cta {
+    background-color: #00B0FF;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.cta:hover {
+    background-color: #027db6;
+}
+
+.consultancy-content {
+    flex: 1;
+}
+
+.consultancy-content ul {
+    list-style-type: none;
+}
+
+.consultancy-content ul li {
+    margin: 1.5rem 0;
 }
