@@ -165,10 +165,6 @@ body {
     box-shadow: 0 3px 5px #000;
 }
 
-#team {
-    grid-area: team;
-}
-
 #inscription {
     background-color: #222;
     color: #fff;
@@ -219,4 +215,53 @@ body {
 
 .consultancy-content ul li {
     margin: 1.5rem 0;
+}
+
+#team {
+    grid-area: team;    
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+}
+
+#team .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f5f5;
+    flex: 1;
+    max-width: 50rem;
+    padding: 5rem;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+    transition: box-shadow .2s;
+}
+
+#team .member:hover {
+    box-shadow: 0 3px 10px #ddd;
+}
+
+#team .member-photo img {
+    border-radius: 50%;
+    box-shadow: 0 3px 15px #ddd;
+}
+
+#team .member-name {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+#team .member-role {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+#team .member-bio {
+    font-size: 1.4rem;
 }
