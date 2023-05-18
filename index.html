@@ -8,6 +8,46 @@
     <title>Trioma</title>
 </head>
 <body>
+    <div id="overlay">
+        <div id="modal">
+            <div>
+                <h3>Inscrição realizada com sucesso!</h3>
+            </div>
+            <div>
+                <div>
+                    <span>Nome:</span>
+                    <span id="outputNome"></span>
+                </div>
+                <div>
+                    <span>E-mail:</span>
+                    <span id="outputEmail"></span>
+                </div>
+                <div>
+                    <span>CEP:</span>
+                    <span id="outputCep"></span>
+                </div>
+                <div>
+                    <span>Logradouro:</span>
+                    <span id="outputLogradouro"></span>
+                </div>
+                <div>
+                    <span>Complemento:</span>
+                    <span id="outputComplemento"></span>
+                </div>
+                <div>
+                    <span>Bairro:</span>
+                    <span id="outputBairro"></span>
+                </div>
+                <div>
+                    <span>UF:</span>
+                    <span id="outputUf"></span>
+                </div>
+            </div>
+            <div>
+                <button onclick="closeOverlay()">Fechar</button>
+            </div>
+        </div>
+    </div>
     <div id="main">
         <div id="header">
             <div id="brand-container">
@@ -157,7 +197,73 @@
                 </div>
             </section>
             <section id="inscription">
-                <span>inscription</span>
+                <form name="inscricao" id="form-inscricao">
+                    <div>
+                        <div>
+                            <h2>Inscreva-se</h2>
+                        </div>
+                        <div>
+                            <label>Nome</label>
+                            <input type="text" placeholder="João da Silva" id="nome" />
+                        </div>
+                        <div>
+                            <label>E-mail</label>
+                            <input type="email" placeholder="seu@email.com" id="email" />
+                        </div>
+                        <div>
+                            <label>CEP</label>
+                            <input type="text" name="cep" id="cep" placeholder="00000-000" />
+                        </div>
+                        <div>
+                            <label>Logradouro</label>
+                            <input type="text" name="logradouro" id="logradouro" placeholder="rua das palmeiras" />
+                        </div>
+                        <div>
+                            <label>Complemento</label>
+                            <input type="text" name="complemento" id="complemento" placeholder="número 000" />
+                        </div>
+                        <div>
+                            <label>Bairro</label>
+                            <input type="text" name="bairro" id="bairro" placeholder="quintais" />
+                        </div>
+                        <div>
+                            <label>UF</label>
+                            <select id="estado" name="estado">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button type="submit">Inscrever</button>
+                        </div>
+                    </div>
+                </form>
             </section>
         </div>
     </div>
